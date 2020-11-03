@@ -1,0 +1,24 @@
+@import './MyGlobalComponentOther.module.scss';
+
+.myGlobalContainer{
+    max-width: 500px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    @include myColor;
+    display: flex;
+    justify-content: flex-start;
+    
+    .sectionImage{
+        width: 25%;
+        background-image: url('./../assets/autorregulacion.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .sectionText{
+        padding: 5px;
+    }
+}
+
